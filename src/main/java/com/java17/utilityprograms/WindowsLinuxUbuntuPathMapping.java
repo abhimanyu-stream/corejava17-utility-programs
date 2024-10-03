@@ -37,6 +37,15 @@ public class WindowsLinuxUbuntuPathMapping {
         // Replace the drive name and convert backslashes to slashes
         String result = userNameRemovedFromPath.replaceAll(windowsToLinuxUbuntuRegex, "").replace("\\", "/").replace("Users", "/home/ubuntu");//ubuntu
         return result;
+        //output:--
+        //  path :  C:\Users\Documents\file.txt
+        //  /home/ubuntu/Documents/file.txt
+        //  path :  Devlopment:\Users\Documents\file.txt
+        //  /home/ubuntu/Documents/file.txt
+        //  path :  devlopment:\Users\Documents\file.txt
+        //  /home/ubuntu/Documents/file.txt
+        //  path :  c:\Users\Documents\file.txt
+        //  /home/ubuntu/Documents/file.txt
     }
 }
 /***
