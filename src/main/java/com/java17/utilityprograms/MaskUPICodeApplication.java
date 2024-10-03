@@ -9,9 +9,9 @@ public class MaskUPICodeApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(MaskUPICodeApplication.class, args);
-        System.out.println(maskUPICode("stream.abhimanyu@okaxis"));
+        System.out.println(maskUPICode("some.example@okhdfc"));
 
-        System.out.println(maskingUPICode("stream.abhimanyu@okaxis"));
+        System.out.println(maskingUPICode("some.example@okhdfc"));
 
     }
 
