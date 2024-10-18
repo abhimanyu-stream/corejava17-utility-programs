@@ -6,7 +6,7 @@ import org.springframework.boot.SpringApplication;
 public class HowToStoreEnumValueAsStringInDB {
 
     public static void main(String[] args) {
-        SpringApplication.run(JavaProgramsApplication.class, args);
+
 
         System.out.println(ProductSubCategory.SMARTPHONES);
         System.out.println(ProductSubCategory.CLOTHINGTOPWAER);
