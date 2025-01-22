@@ -13,8 +13,8 @@ public class ReadAllFilesAndStoreTextInAFile {
 
     public static void main(String[] args) {
         // Define the source directory to read the filenames from
-        Path sourceDirectory = Paths.get("D://Additional-D//song english");  // Change to the directory you want to scan
-        Path outputFile = Paths.get("D://Additional-D//song english//output.txt");  // Path to the output text file
+        Path sourceDirectory = Paths.get("E://c++-learn//C++ Programming");  // Change to the directory you want to scan
+        Path outputFile = Paths.get("E://c++-learn//C++ Programming//output.txt");  // Path to the output text file
 
         try {
             // Create the output file if it doesn't exist
@@ -31,7 +31,7 @@ public class ReadAllFilesAndStoreTextInAFile {
                     public FileVisitResult visitFile(Path file, BasicFileAttributes attrs) throws IOException {
                         // Only write the filename, not the full path
                         String fileName = file.getFileName().toString();
-                        writer.write(fileName);
+                        writer.write(fileName.replace(".mp4", ""));
                         writer.newLine();  // Write a new line after each filename
                         return FileVisitResult.CONTINUE;
                     }
